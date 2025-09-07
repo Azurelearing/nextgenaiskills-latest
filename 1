@@ -1,0 +1,420 @@
+<!-- NextGen AI Skills - Single-file HTML template
+     Editable: Use this as the basis for your site. Includes Tailwind CDN and minimal JS for accordion and mobile nav.
+     Replace placeholder images, icons, and links as needed.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevOps & AI Training in Hyderabad – NextGen AI Skills</title>
+  <meta name="description" content="Hands-on, project-driven training in AI, DevOps, Cloud & Emerging Technologies. Live online and Hyderabad campus sessions.">
+  <meta name="theme-color" content="#0f172a">
+  <!-- Tailwind via CDN (for quick prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small extra styling for accordion caret rotation */
+    .rotate-90 { transform: rotate(90deg); }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+  <!-- NAV -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-600 to-teal-400 flex items-center justify-center text-white font-bold">N</div>
+        <div>
+          <h1 class="text-lg font-semibold">NextGen AI Skills</h1>
+          <p class="text-xs text-slate-500">DevOps • AI • Cloud</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#why" class="text-slate-600 hover:text-slate-900">Why Choose Us</a>
+        <a href="#courses" class="text-slate-600 hover:text-slate-900">Courses</a>
+        <a href="#curriculum" class="text-slate-600 hover:text-slate-900">Curriculum</a>
+        <a href="#contact" class="text-slate-600 hover:text-slate-900">Contact</a>
+        <a href="https://wa.me/919494034647" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-emerald-500 text-white px-4 py-2 rounded-md">WhatsApp</a>
+      </nav>
+
+      <button id="mobileBtn" class="md:hidden p-2 rounded-md bg-slate-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden px-6 pb-6">
+      <a href="#why" class="block py-2">Why Choose Us</a>
+      <a href="#courses" class="block py-2">Courses</a>
+      <a href="#curriculum" class="block py-2">Curriculum</a>
+      <a href="#contact" class="block py-2">Contact</a>
+      <a href="https://wa.me/919494034647" target="_blank" class="block py-2 text-emerald-600">WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-1">
+      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">NextGen AI Skills — Elevate Your DevOps & AI Expertise</h2>
+      <p class="mt-4 text-lg text-slate-600">Hands-on, project-driven training in AI, DevOps, Cloud & Emerging Technologies.</p>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#courses" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Explore Courses</a>
+        <a href="https://wa.me/919494034647" target="_blank" class="inline-flex items-center gap-2 border border-slate-200 px-5 py-3 rounded-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0012 0C5.37 0 .02 5.35.02 12c0 2.11.56 4.18 1.62 6.02L0 24l6.18-1.61A11.95 11.95 0 0012 24c6.63 0 12-5.35 12-12 0-3.17-1.24-6.15-3.48-8.52zM12 22c-1.92 0-3.78-.5-5.4-1.44l-.39-.24-3.68.96.99-3.6-.25-.37A9.9 9.9 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>
+          Contact Us via WhatsApp
+        </a>
+      </div>
+
+      <ul class="mt-6 text-sm text-slate-500 space-y-2">
+        <li>Hybrid formats: live online + optional in-person sessions (Hyderabad)</li>
+        <li>Placement assistance, mock interviews & resume support</li>
+      </ul>
+    </div>
+
+    <div class="flex-1">
+      <div class="bg-gradient-to-br from-indigo-50 to-teal-50 rounded-2xl p-6 shadow-md">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="students" class="w-full rounded-lg object-cover h-64" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h3 class="text-2xl font-semibold">Why Choose Us</h3>
+        <p class="mt-2 text-slate-600">Industry-driven training focused on real-world projects and employability.</p>
+
+        <ul class="mt-6 space-y-3">
+          <li class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-md bg-indigo-600 text-white flex items-center justify-center font-semibold">1</div>
+            <div>
+              <div class="font-medium">Intensive, real-world project-based learning</div>
+              <div class="text-sm text-slate-500">Work on end-to-end projects mirroring enterprise workflows.</div>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-md bg-indigo-600 text-white flex items-center justify-center font-semibold">2</div>
+            <div>
+              <div class="font-medium">Industry-vetted curriculum</div>
+              <div class="text-sm text-slate-500">DevOps, AI, Cloud, Kubernetes, CI/CD and more.</div>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-md bg-indigo-600 text-white flex items-center justify-center font-semibold">3</div>
+            <div>
+              <div class="font-medium">Personalized guidance & placement support</div>
+              <div class="text-sm text-slate-500">Mock interviews, resume reviews, and career mentoring.</div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-sm">
+        <h4 class="font-medium">Hybrid Learning</h4>
+        <p class="mt-2 text-sm text-slate-600">Live online batches with recordings. Optional in-person labs & workshops from Hyderabad campus.</p>
+
+        <div class="mt-4 grid grid-cols-1 gap-3">
+          <div class="p-3 border border-slate-100 rounded-md">
+            <div class="font-semibold">Course Formats</div>
+            <div class="text-sm text-slate-500">Weekend / Weekday / Fast-track</div>
+          </div>
+
+          <div class="p-3 border border-slate-100 rounded-md">
+            <div class="font-semibold">Support</div>
+            <div class="text-sm text-slate-500">Mentor sessions, doubt clearing, placement assistance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES OFFERED -->
+  <section id="courses" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-semibold">Courses Offered</h3>
+    <p class="text-sm text-slate-600 mt-2">Choose a focused program or combine modules to build a custom learning path.</p>
+
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card: DevOps -->
+      <article class="bg-white p-6 rounded-xl shadow-sm">
+        <h4 class="font-semibold">DevOps Automation</h4>
+        <p class="text-sm text-slate-500 mt-2">CI/CD, Jenkins, Docker, Kubernetes, Terraform, SRE, Monitoring (Prometheus/Grafana).</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-sm text-slate-600">Duration: 12 weeks</span>
+          <a href="#curriculum" class="text-indigo-600 text-sm">View curriculum</a>
+        </div>
+      </article>
+
+      <!-- Card: AI -->
+      <article class="bg-white p-6 rounded-xl shadow-sm">
+        <h4 class="font-semibold">AI & Gen AI Fundamentals</h4>
+        <p class="text-sm text-slate-500 mt-2">Foundations of ML, prompt engineering, practical GenAI projects and tools.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-sm text-slate-600">Duration: 8–10 weeks</span>
+          <a href="#curriculum" class="text-indigo-600 text-sm">View curriculum</a>
+        </div>
+      </article>
+
+      <!-- Card: Cloud -->
+      <article class="bg-white p-6 rounded-xl shadow-sm">
+        <h4 class="font-semibold">Cloud Platforms & IaC</h4>
+        <p class="text-sm text-slate-500 mt-2">AWS/Azure fundamentals, Terraform, Infrastructure as Code, cloud best practices.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-sm text-slate-600">Duration: 8–12 weeks</span>
+          <a href="#curriculum" class="text-indigo-600 text-sm">View curriculum</a>
+        </div>
+      </article>
+
+      <!-- Card: Python -->
+      <article class="bg-white p-6 rounded-xl shadow-sm">
+        <h4 class="font-semibold">Python for Automation</h4>
+        <p class="text-sm text-slate-500 mt-2">Scripting, API automation, infra automation and tooling for DevOps workflows.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-sm text-slate-600">Duration: 6–8 weeks</span>
+          <a href="#curriculum" class="text-indigo-600 text-sm">View curriculum</a>
+        </div>
+      </article>
+
+      <!-- Card: Soft Skills -->
+      <article class="bg-white p-6 rounded-xl shadow-sm">
+        <h4 class="font-semibold">Soft Skills & Interview Prep</h4>
+        <p class="text-sm text-slate-500 mt-2">Resume building, mock interviews, communication & behavioral training.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-sm text-slate-600">Duration: Ongoing</span>
+          <a href="#contact" class="text-indigo-600 text-sm">Apply now</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CURRICULUM / ACCORDION -->
+  <section id="curriculum" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-semibold">Course Highlights / Curriculum Snapshot</h3>
+    <p class="text-sm text-slate-600 mt-2">Click each module to expand and view key topics.</p>
+
+    <div class="mt-6 space-y-3">
+      <!-- Accordion item -->
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <button class="w-full text-left px-5 py-4 flex items-center justify-between accordion-btn">
+          <div>
+            <div class="font-semibold">DevOps Fundamentals</div>
+            <div class="text-sm text-slate-500">Git, Linux, Agile, DevOps mindset</div>
+          </div>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M6 6L14 10L6 14V6Z" /></svg>
+        </button>
+        <div class="px-5 pb-5 hidden accordion-panel">
+          <ul class="mt-3 text-sm text-slate-600 space-y-2">
+            <li>Version control with Git & branches, merge strategies</li>
+            <li>Linux essentials for engineers</li>
+            <li>Agile practices & CI/CD mindset</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <button class="w-full text-left px-5 py-4 flex items-center justify-between accordion-btn">
+          <div>
+            <div class="font-semibold">Automation & CI/CD</div>
+            <div class="text-sm text-slate-500">Jenkins, Docker, Ansible</div>
+          </div>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M6 6L14 10L6 14V6Z" /></svg>
+        </button>
+        <div class="px-5 pb-5 hidden accordion-panel">
+          <ul class="mt-3 text-sm text-slate-600 space-y-2">
+            <li>Containerization with Docker</li>
+            <li>Build pipelines with Jenkins / GitLab CI</li>
+            <li>Configuration management using Ansible</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <button class="w-full text-left px-5 py-4 flex items-center justify-between accordion-btn">
+          <div>
+            <div class="font-semibold">Cloud & Infra</div>
+            <div class="text-sm text-slate-500">AWS / Azure, Terraform, Kubernetes, Monitoring</div>
+          </div>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M6 6L14 10L6 14V6Z" /></svg>
+        </button>
+        <div class="px-5 pb-5 hidden accordion-panel">
+          <ul class="mt-3 text-sm text-slate-600 space-y-2">
+            <li>Cloud fundamentals (AWS/Azure)</li>
+            <li>Infrastructure as Code with Terraform</li>
+            <li>Kubernetes basics & cluster operations</li>
+            <li>Monitoring: Prometheus & Grafana</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <button class="w-full text-left px-5 py-4 flex items-center justify-between accordion-btn">
+          <div>
+            <div class="font-semibold">Capstone Projects & Career Prep</div>
+            <div class="text-sm text-slate-500">Projects, mock interviews, resume building</div>
+          </div>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M6 6L14 10L6 14V6Z" /></svg>
+        </button>
+        <div class="px-5 pb-5 hidden accordion-panel">
+          <ul class="mt-3 text-sm text-slate-600 space-y-2">
+            <li>End-to-end capstone projects simulating real SRE/DevOps tasks</li>
+            <li>Resume & LinkedIn profile reviews</li>
+            <li>Mock technical & HR interviews</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & LOCATION -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h3 class="text-2xl font-semibold">About Us</h3>
+        <p class="mt-3 text-slate-600">We are NextGen AI Skills—Hyderabad's premiere AI & DevOps training hub. We focus on industry-vetted curricula, hands-on projects and career readiness.</p>
+
+        <div class="mt-4 text-sm text-slate-700 space-y-2">
+          <div><strong>Phone/WhatsApp:</strong> <a href="https://wa.me/919494034647" class="text-emerald-600">+91‑9494034647</a></div>
+          <div><strong>Instagram:</strong> <a href="https://instagram.com/NextGen_AI_Skills" target="_blank" class="text-indigo-600">@NextGen_AI_Skills</a></div>
+          <div><strong>Location:</strong> Hyderabad, Telangana, India</div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Optional embed map or image -->
+        <div class="rounded-xl overflow-hidden shadow-sm bg-white">
+          <iframe title="Hyderabad map" src="https://www.google.com/maps?q=Hyderabad,+Telangana,+India&output=embed" class="w-full h-64 border-0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-semibold">Student Success</h3>
+    <p class="text-sm text-slate-600 mt-2">Hear from our students.</p>
+
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <figure class="bg-white p-6 rounded-xl shadow-sm">
+        <blockquote class="text-slate-700">“Placement-driven curriculum helped me land a DevOps role within weeks.”</blockquote>
+        <figcaption class="mt-3 text-sm text-slate-500">— A. Kumar, DevOps Engineer</figcaption>
+      </figure>
+
+      <figure class="bg-white p-6 rounded-xl shadow-sm">
+        <blockquote class="text-slate-700">“Hands-on projects boosted my confidence and readiness.”</blockquote>
+        <figcaption class="mt-3 text-sm text-slate-500">— S. Reddy, SRE</figcaption>
+      </figure>
+
+      <figure class="bg-white p-6 rounded-xl shadow-sm">
+        <blockquote class="text-slate-700">“Mentor support and mock interviews were invaluable.”</blockquote>
+        <figcaption class="mt-3 text-sm text-slate-500">— T. Sharma, Cloud Engineer</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-semibold">Contact Us</h3>
+    <p class="text-sm text-slate-600 mt-2">Interested in a course? Drop your details and we'll get back to you via WhatsApp.</p>
+
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <form class="bg-white p-6 rounded-xl shadow-sm" onsubmit="event.preventDefault(); alert('Form submitted — connect your backend!');">
+        <div class="grid gap-4">
+          <input required name="name" placeholder="Name" class="px-4 py-3 border rounded-md" />
+          <input required type="email" name="email" placeholder="Email" class="px-4 py-3 border rounded-md" />
+          <input required name="phone" placeholder="Phone / WhatsApp" class="px-4 py-3 border rounded-md" />
+          <select name="course" class="px-4 py-3 border rounded-md">
+            <option>DevOps Automation</option>
+            <option>AI & Gen AI Fundamentals</option>
+            <option>Cloud Platforms</option>
+            <option>Python for Automation</option>
+            <option>Soft Skills & Interview Prep</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Message (optional)" class="px-4 py-3 border rounded-md"></textarea>
+
+          <div class="flex items-center gap-3">
+            <button class="bg-indigo-600 text-white px-5 py-3 rounded-md">Submit</button>
+            <a href="https://wa.me/919494034647" target="_blank" class="inline-flex items-center gap-2 border px-4 py-3 rounded-md">Message on WhatsApp</a>
+          </div>
+        </div>
+      </form>
+
+      <div class="flex flex-col gap-4">
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <h4 class="font-semibold">Quick Contact</h4>
+          <p class="text-sm text-slate-600 mt-2">Phone / WhatsApp: <a href="https://wa.me/919494034647" class="text-emerald-600">+91‑9494034647</a></p>
+          <p class="text-sm text-slate-600">Instagram: <a href="https://instagram.com/NextGen_AI_Skills" class="text-indigo-600">@NextGen_AI_Skills</a></p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <h4 class="font-semibold">Office Hours</h4>
+          <p class="text-sm text-slate-600 mt-2">Mon — Sat: 10:00 AM — 7:00 PM</p>
+          <p class="text-sm text-slate-500 mt-2">Prefer WhatsApp for faster response.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <h4 class="font-semibold">Follow Us</h4>
+          <div class="mt-3 flex gap-3">
+            <a href="https://instagram.com/NextGen_AI_Skills" target="_blank" class="px-3 py-2 border rounded-md">Instagram</a>
+            <a href="https://wa.me/919494034647" target="_blank" class="px-3 py-2 border rounded-md">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-start gap-6">
+      <div>
+        <h5 class="font-semibold">NextGen AI Skills</h5>
+        <p class="text-sm text-slate-600 mt-2">Phone/WhatsApp: <a href="https://wa.me/919494034647" class="text-emerald-600">+91‑9494034647</a></p>
+        <p class="text-sm text-slate-600">Instagram: <a href="https://instagram.com/NextGen_AI_Skills" class="text-indigo-600">@NextGen_AI_Skills</a></p>
+      </div>
+
+      <div class="flex gap-6">
+        <div>
+          <h6 class="font-medium">Quick Links</h6>
+          <ul class="text-sm text-slate-600 mt-2 space-y-2">
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t bg-slate-50 py-3">
+      <div class="max-w-6xl mx-auto px-6 text-sm text-slate-500">© NextGen AI Skills — All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // mobile nav
+    document.getElementById('mobileBtn').addEventListener('click', function(){
+      const nav = document.getElementById('mobileNav');
+      nav.classList.toggle('hidden');
+    });
+
+    // Accordion behavior
+    document.querySelectorAll('.accordion-btn').forEach(btn => {
+      btn.addEventListener('click', function(){
+        const panel = this.nextElementSibling;
+        const chevron = this.querySelector('svg');
+        if(panel.classList.contains('hidden')){
+          panel.classList.remove('hidden');
+          chevron.style.transform = 'rotate(90deg)';
+        } else {
+          panel.classList.add('hidden');
+          chevron.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
